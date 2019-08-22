@@ -38,8 +38,8 @@ TEST(LispTestCase, NotEmptyListTest) {
 	EXPECT_EQ(children[2].getContent(), "d");
 }
 
-/*TEST(LispTestCase, NestedListTest) {
-	LispList result = Lisp::parse("(ab (bcd de) fgh)");
+TEST(LispTestCase, NestedListTest) {
+	LispAtom result = Lisp::parse("(ab (bcd de) fgh)");
 	EXPECT_TRUE(result.isList());
 	EXPECT_EQ(result.size(), 3);
 	std::vector<LispAtom> children = result.getChildren();
@@ -55,4 +55,4 @@ TEST(LispTestCase, NotEmptyListTest) {
 	EXPECT_EQ(list2children[1].getContent(), "de");
 	EXPECT_FALSE(children[2].isList());
 	EXPECT_EQ(children[2].getContent(), "fgh");
-}*/
+}
