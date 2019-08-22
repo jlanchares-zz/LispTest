@@ -8,6 +8,7 @@ public:
 	inline std::string getContent() { return _content; }
 	inline void setContent(std::string content) { _content = content; }
 	inline int size() { return _listContent.size();  }
+	inline std::vector<LispAtom> getChildren() { return _listContent; }
 
 private:
 	bool _isList;

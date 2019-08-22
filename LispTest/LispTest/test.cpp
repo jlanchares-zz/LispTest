@@ -15,7 +15,7 @@ TEST(LispTestCase, EmptyListTest) {
 	EXPECT_EQ(result.getContent(), "");
 }
 
-/*TEST(LispTestCase, EmptyListChildrenTest) {
+TEST(LispTestCase, EmptyListChildrenTest) {
 	LispAtom result = Lisp::parse("()");
 	EXPECT_TRUE(result.isList());
 	EXPECT_EQ(result.size(), 0);
@@ -24,7 +24,7 @@ TEST(LispTestCase, EmptyListTest) {
 
 }
 
-TEST(LispTestCase, NotEmptyListTest) {
+/*TEST(LispTestCase, NotEmptyListTest) {
 	LispAtom result = Lisp::parse("(a s d)");
 	EXPECT_TRUE(result.isList());
 	EXPECT_EQ(result.size(), 3);
