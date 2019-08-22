@@ -9,6 +9,7 @@ public:
 	inline void setContent(std::string content) { _content = content; }
 	inline int size() { return _listContent.size();  }
 	inline std::vector<LispAtom> getChildren() { return _listContent; }
+	inline void addChildren(LispAtom children) { _listContent.push_back(children); }
 
 private:
 	bool _isList;

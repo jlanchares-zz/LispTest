@@ -24,7 +24,7 @@ TEST(LispTestCase, EmptyListChildrenTest) {
 
 }
 
-/*TEST(LispTestCase, NotEmptyListTest) {
+TEST(LispTestCase, NotEmptyListTest) {
 	LispAtom result = Lisp::parse("(a s d)");
 	EXPECT_TRUE(result.isList());
 	EXPECT_EQ(result.size(), 3);
@@ -38,7 +38,7 @@ TEST(LispTestCase, EmptyListChildrenTest) {
 	EXPECT_EQ(children[2].getContent(), "d");
 }
 
-TEST(LispTestCase, NestedListTest) {
+/*TEST(LispTestCase, NestedListTest) {
 	LispList result = Lisp::parse("(ab (bcd de) fgh)");
 	EXPECT_TRUE(result.isList());
 	EXPECT_EQ(result.size(), 3);
