@@ -8,14 +8,14 @@ TEST(LispTestCase, AtomTest) {
 	EXPECT_EQ(result.getContent(), "asd");
 }
 
-/*TEST(LispTestCase, EmptyListTest) {
+TEST(LispTestCase, EmptyListTest) {
 	LispAtom result = Lisp::parse("()");
 	EXPECT_TRUE(result.isList());
 	EXPECT_EQ(result.size(), 0);
 	EXPECT_EQ(result.getContent(), "");
 }
 
-TEST(LispTestCase, EmptyListChildrenTest) {
+/*TEST(LispTestCase, EmptyListChildrenTest) {
 	LispAtom result = Lisp::parse("()");
 	EXPECT_TRUE(result.isList());
 	EXPECT_EQ(result.size(), 0);
